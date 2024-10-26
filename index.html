@@ -4,6 +4,33 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home Page</title>
+    <style>
+        /* 添加一些基本样式 */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header, nav, main, footer {
+            padding: 20px;
+        }
+        main {
+            display: flex;
+        }
+        section {
+            flex: 1;
+        }
+        aside {
+            width: 200px; /* 可以根据照片大小调整宽度 */
+            padding: 20px;
+            flex-shrink: 0; /* 防止侧边栏在屏幕较小时缩小 */
+        }
+        img.profile {
+            width: 100%; /* 使照片宽度适应容器 */
+            height: auto; /* 保持照片的纵横比 */
+            border-radius: 50%; /* 圆形照片效果 */
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -24,7 +51,7 @@
             </ul>
         </section>
         <aside>
-            <!-- Sidebar content -->
+            <img src="hzy.jpg" alt="Profile Picture" class="profile">
         </aside>
     </main>
     <footer>
